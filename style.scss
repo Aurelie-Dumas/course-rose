@@ -1,0 +1,24 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+.footer
+{
+    a
+    {
+    text-decoration: none;
+    color: #fa008a;
+    }
+}
+
+%title-centered
+{
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.title
+{
+    @extend %title-centered;
+}
