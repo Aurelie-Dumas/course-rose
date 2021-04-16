@@ -1,24 +1,66 @@
-* 
-{
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$global-font: 'Open Sans', sans-serif;
+$base-value-title: 32px;
+$base-value-p: 14px;
+$pink:#fa008a;
+$color-btn: white;
+$border-btn: #590433;
+
+body {
+    font-family: $global-font;
 }
 
-.footer
-{
-    a
-    {
-    text-decoration: none;
-    color: #fa008a;
-    }
-}
-
-%title-centered
-{
+%title-centered {
     text-align:center;
     text-transform: uppercase;
+    font-weight: 600;
+    font-size: $base-value-title;
 }
 
-.title
-{
+.title {
     @extend %title-centered;
+}
+
+h1 {
+    color: $pink;
+}
+h3 {
+    font-size: 20px;
+}
+p {
+    font-size: $base-value-p;
+    text-align: justify;
+}
+
+@mixin button {
+    width:25%;
+    color: $color-btn;
+    font-weight: 700;
+
+}
+.btn-forms {
+    @include button;
+    background-color: $pink;
+    &:hover {
+        color: lighten($pink, 30%);;
+        background-color: darken($pink, 10%);
+        border-color: lighten($pink, 12%);
+      }
+}
+.btn-ok {
+    @include button;
+    background-color:#112d3d;
+    &:hover {
+        color: $color-btn;
+        background-color: darken(#112d3d, 10%);
+        border-color: lighten(#112d3d, 12%);
+      }
+}
+
+.footer {
+    div a {
+        text-decoration: none;
+        color: $pink;
+        font-size: $base-value-p;
+    }
 }

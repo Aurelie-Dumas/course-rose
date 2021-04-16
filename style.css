@@ -1,15 +1,57 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #fa008a;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 .title {
   text-align: center;
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+h1 {
+  color: #fa008a;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.btn-forms {
+  width: 25%;
+  color: white;
+  font-weight: 700;
+  background-color: #fa008a;
+}
+
+.btn-forms:hover {
+  color: #ff94cf;
+  background-color: #c7006e;
+  border-color: #ff38a6;
+}
+
+.btn-ok {
+  width: 25%;
+  color: white;
+  font-weight: 700;
+  background-color: #112d3d;
+}
+
+.btn-ok:hover {
+  color: white;
+  background-color: #061015;
+  border-color: #1e506d;
+}
+
+.footer div a {
+  text-decoration: none;
+  color: #fa008a;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
