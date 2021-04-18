@@ -3,6 +3,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.nav-link:hover {
+  color: #fa008a !important;
+}
+
 .title {
   text-align: center;
   text-transform: uppercase;
@@ -18,7 +22,7 @@ h3 {
   font-size: 20px;
 }
 
-p {
+main p {
   font-size: 14px;
   text-align: justify;
 }
@@ -49,9 +53,14 @@ p {
   border-color: #1e506d;
 }
 
-.footer div a {
+.footer a {
   text-decoration: none;
   color: #fa008a;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  color: #F961B4;
   font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

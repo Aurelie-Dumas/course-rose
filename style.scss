@@ -9,6 +9,9 @@ $border-btn: #590433;
 body {
     font-family: $global-font;
 }
+.nav-link:hover{
+    color:$pink !important;
+}
 
 %title-centered {
     text-align:center;
@@ -27,7 +30,7 @@ h1 {
 h3 {
     font-size: 20px;
 }
-p {
+main p {
     font-size: $base-value-p;
     text-align: justify;
 }
@@ -58,9 +61,14 @@ p {
 }
 
 .footer {
-    div a {
+    a {
         text-decoration: none;
         color: $pink;
+        font-size: $base-value-p;
+    }
+
+    a:hover {
+        color: #F961B4;
         font-size: $base-value-p;
     }
 }
