@@ -27,27 +27,27 @@ main p {
   text-align: justify;
 }
 
-.btn-forms {
+.btn-form {
   width: 25%;
   color: white;
   font-weight: 700;
   background-color: #fa008a;
 }
 
-.btn-forms:hover {
+.btn-form:hover {
   color: #ff94cf;
   background-color: #c7006e;
   border-color: #ff38a6;
 }
 
-.btn-ok {
+.btn-blue {
   width: 25%;
   color: white;
   font-weight: 700;
   background-color: #112d3d;
 }
 
-.btn-ok:hover {
+.btn-blue:hover {
   color: white;
   background-color: #061015;
   border-color: #1e506d;

@@ -41,7 +41,7 @@ main p {
     font-weight: 700;
 
 }
-.btn-forms {
+.btn-form {
     @include button;
     background-color: $pink;
     &:hover {
@@ -50,7 +50,7 @@ main p {
         border-color: lighten($pink, 12%);
       }
 }
-.btn-ok {
+.btn-blue {
     @include button;
     background-color:#112d3d;
     &:hover {
