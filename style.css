@@ -27,14 +27,14 @@ main p {
   text-align: justify;
 }
 
-.btn-form {
+.btn-pink {
   width: 25%;
   color: white;
   font-weight: 700;
   background-color: #fa008a;
 }
 
-.btn-form:hover {
+.btn-pink:hover {
   color: #ff94cf;
   background-color: #c7006e;
   border-color: #ff38a6;
