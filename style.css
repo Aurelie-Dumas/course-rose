@@ -11,6 +11,11 @@ body {
   color: #fa008a !important;
 }
 
+.breadcrumb a {
+  color: #fa008a;
+  text-decoration: none;
+}
+
 .title {
   text-align: center;
   text-transform: uppercase;

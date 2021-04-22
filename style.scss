@@ -18,6 +18,13 @@ body {
     color:$pink !important;
 }
 
+.breadcrumb {
+    a {
+    color:$pink;
+    text-decoration: none;
+    }
+}
+
 %title-centered {
     text-align:center;
     text-transform: uppercase;
