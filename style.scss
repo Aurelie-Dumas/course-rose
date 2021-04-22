@@ -9,7 +9,12 @@ $border-btn: #590433;
 body {
     font-family: $global-font;
 }
-.nav-link:hover{
+
+.color-background {
+    background-color:#112d3d !important;
+}
+
+.nav-link:hover {
     color:$pink !important;
 }
 
@@ -19,7 +24,6 @@ body {
     font-weight: 600;
     font-size: $base-value-title;
 }
-
 
 .title {
     @extend %title-centered;
@@ -37,7 +41,6 @@ main p {
 }
 
 @mixin button {
-    width:25%;
     color: $color-btn;
     font-weight: 700;
 }
@@ -62,8 +65,21 @@ main p {
       }
 }
 
+.form-donate{
+    .btn {
+        min-width: 25%;
+    }
+}
 
+.btn-responsive {
+    .btn {
+    min-width: 25%;
+    }
+}
 
+.color-background-news {
+    background-color: #f0f1f8;
+}
 
 .footer {
     a {
@@ -75,5 +91,23 @@ main p {
     a:hover {
         color: #F961B4;
         font-size: $base-value-p;
+    }
+
+    .btn-footer {
+        @include button;
+        background-color:$pink;
+        &:hover {
+            color: $color-btn;
+            background-color: darken($pink, 10%);
+            border-color: lighten(#112d3d, 12%);
+          }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .btn-responsive {
+        .btn {
+            min-width: 50%;
+        }
     }
 }

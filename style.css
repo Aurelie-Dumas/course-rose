@@ -3,6 +3,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.color-background {
+  background-color: #112d3d !important;
+}
+
 .nav-link:hover {
   color: #fa008a !important;
 }
@@ -28,7 +32,6 @@ main p {
 }
 
 .btn-pink {
-  width: 25%;
   color: white;
   font-weight: 700;
   background-color: #fa008a;
@@ -41,7 +44,6 @@ main p {
 }
 
 .btn-blue {
-  width: 25%;
   color: white;
   font-weight: 700;
   background-color: #112d3d;
@@ -53,6 +55,18 @@ main p {
   border-color: #1e506d;
 }
 
+.form-donate .btn {
+  min-width: 25%;
+}
+
+.btn-responsive .btn {
+  min-width: 25%;
+}
+
+.color-background-news {
+  background-color: #f0f1f8;
+}
+
 .footer a {
   text-decoration: none;
   color: #fa008a;
@@ -62,5 +76,23 @@ main p {
 .footer a:hover {
   color: #F961B4;
   font-size: 14px;
+}
+
+.footer .btn-footer {
+  color: white;
+  font-weight: 700;
+  background-color: #fa008a;
+}
+
+.footer .btn-footer:hover {
+  color: white;
+  background-color: #c7006e;
+  border-color: #1e506d;
+}
+
+@media screen and (max-width: 991px) {
+  .btn-responsive .btn {
+    min-width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-xl navbar-dark p-0" style="background-color: #112d3d;">
+    <nav class="color-background navbar navbar-expand-xl navbar-dark p-0">
       <div class="container-fluid">
         <a class="navbar-brand mt-2" href="index.html">
           <span class="logo"><img src="images/logo.png" width="182" height="90"></span>
@@ -87,6 +87,7 @@
               <div class="col-12 col-md-9">
                 <div class="card-body">
                   <p class="lead card-title text-center mt-3">Vos dons accélèrent la recherche</p>
+                  <form action="" method="get" class="form-donate">
                     <div class="card-text d-flex justify-content-evenly align-items-center">
                       <input type="radio" class="btn-check" name="amount" value="amount" id="amount1" autocomplete="off">
                       <label class="btn btn-light btn-pink" for="amount1">25€</label>
@@ -108,7 +109,7 @@
                     <div class="input-group mb-3 mt-2 w-100 d-flex justify-content-center">
                       <button type="submit" class="btn btn-blue">Je donne</button>
                     </div>
-                  </p>
+                  </form>
                 </div>
               </div>
             </div>
@@ -123,7 +124,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container btn-responsive">
       <h2 class="title pt-5 pb-4">Les Courses à venir</h2>
       <div class="row row-cols-1 row-cols-lg-4 g-4 pb-3 mt-0">
         <div class="col">
@@ -144,13 +145,14 @@
               </p>
             
               <p class="card-text">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date-fill" viewBox="0 0 16 16">
-              <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2z"/>
-              <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a12.6 12.6 0 0 1 1.313-.805h.632z"/>
-              </svg> Du 6 au 12 Septembre 2021</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date-fill" viewBox="0 0 16 16">
+                  <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2z"/>
+                  <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a12.6 12.6 0 0 1 1.313-.805h.632z"/>
+                </svg> Du 6 au 12 Septembre 2021
+              </p>
 
               <div class="text-center">
-                <a class="btn btn-blue w-50" href="">Je m'inscris</a>
+                <a href="#" class="btn btn-blue" href="">Je m'inscris</a>
               </div>
             </div>
           </div>
@@ -181,7 +183,7 @@
               </p>
               
               <div class="text-center">
-                <a class="btn btn-blue w-50" href="">Je m'inscris</a>
+                <a href="#" class="btn btn-blue" href="">Je m'inscris</a>
               </div>
             </div>
           </div>
@@ -212,7 +214,7 @@
               </p>
 
               <div class="text-center">
-                <a class="btn btn-blue w-50" href="">Je m'inscris</a>
+                <a href="#" class="btn btn-blue" href="">Je m'inscris</a>
               </div>
             </div>
           </div>
@@ -220,7 +222,7 @@
         <div class="col">
           <div class="card h-100">
             <img src="images/course-lille.jpg" class="card-img-top" alt="course-lille">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">La Course Rose Lilloise</h5>
               <p class="card-text">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -242,8 +244,8 @@
                 Du 25 au 31 Octobre 2021
               </p>
 
-              <div class="text-center">
-                <a class="btn btn-blue w-50" href="">Je m'inscris</a>
+              <div class="text-center mt-auto">
+                <a href="#" class="btn btn-blue" href="">Je m'inscris</a>
               </div>
             </div>
           </div>
@@ -251,23 +253,23 @@
       </div>
 
       <div class="text-center mb-3">
-        <a class="btn btn-blue w-25">Voir toutes les courses</a>
+        <a href="#" class="btn btn-blue">Voir toutes les courses</a>
       </div>
     </section>
 
-    <section class="container">
+    <section class="container btn-responsive">
       <h2 class="title pt-5 pb-4">Actualités</h2>
       <div class="row row-cols-1 row-cols-lg-4 g-4 pb-3 mt-0">
         <div class="col">
           <div class="card h-100">
             <img src="images/actus-1.jpg" class="card-img-top" alt="actus-1">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">Course Rose Marseillaise</h5>
               <p class="card-text">
                 Revivez en détail cette journée record ! <br> Une vague rose pour lutter contre le concer du sein, dans une ambiance festive, s'est propagée dans la vieille ville.
               </p>
-              <div class="text-center">
-                <a class="btn btn-blue w-50">En savoir plus</a>
+              <div class="text-center mt-auto">
+                <a href="#" class="btn btn-blue">En savoir plus</a>
               </div>
             </div>
           </div>
@@ -275,13 +277,13 @@
         <div class="col">
           <div class="card h-100">
             <img src="images/actus-2.jpg" class="card-img-top" alt="actus-2">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">Choisissez le bon matériel</h5>
               <p class="card-text">
                 Tout comme l'alimentation, il faut tester l'équipement avant de le porter le Jour J. Le choix est souvent difficile et très variable.
               </p>
-              <div class="text-center">
-                <a class="btn btn-blue w-50">En savoir plus</a>
+              <div class="text-center mt-auto">
+                <a href="#" class="btn btn-blue">En savoir plus</a>
               </div>
             </div>
           </div>
@@ -289,13 +291,13 @@
         <div class="col">
           <div class="card h-100">
             <img src="images/actus-3.jpg" class="card-img-top" alt="actus-3">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">Pas trop de pression...</h5>
               <p class="card-text">
                 Ce sera votre premier marathon, l'objectif est avant tout de le finir. Vous pouvez déjà être fière de vous le jour où vous vous alignez sur la ligne de départ.  
               </p>
-              <div class="text-center">
-                <a class="btn btn-blue w-50">En savoir plus</a>
+              <div class="text-center mt-auto">
+                <a href="#" class="btn btn-blue">En savoir plus</a>
               </div>
             </div>
           </div>
@@ -303,14 +305,14 @@
         <div class="col">
           <div class="card h-100">
             <img src="images/actus-4.jpg" class="card-img-top" alt="actus-4">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">Attention aux blessures</h5>
               <p class="card-text">
                 Pour participer à une course en France, il vous faudra un certificat établi par votre médecin. 
                 Pensez à faire réaliser ce bilan complet vous préparer physiquement.
               </p>
-              <div class="text-center">
-                <a class="btn btn-blue w-50">En savoir plus</a>
+              <div class="text-center mt-auto">
+                <a href="#" class="btn btn-blue">En savoir plus</a>
               </div>
             </div>
           </div>
@@ -318,7 +320,7 @@
       </div>
 
       <div class="text-center mb-3">
-        <a class="btn btn-blue w-25">Voir toutes les actualités</a>
+        <a href="#" class="btn btn-blue">Voir toutes les actualités</a>
       </div>
     </section>
     
@@ -354,12 +356,12 @@
           <p class="justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum aliquet lacus malesuada suscipit. Maecenas sodales tellus vel lorem laoreet, sit amet placerat ligula porttitor. Donec elementum maximus mauris sit amet gravida. 
           </p>
-          <a class="btn btn-pink w-50">Devenir Bénévole</a>
+          <a href="#" class="btn btn-pink">Devenir Bénévole</a>
         </div>
       </div>
     </section>
       
-    <section class="container-fluid" style="background-color:#f0f1f8;">
+    <section class="container-fluid color-background-news">
       <div class="row">
         <div class="col-12">
           <h3 class="text-center pt-4 mb-3"><strong>Restez informés</strong></h3>
@@ -370,15 +372,33 @@
             <div class="input-group mb-3 w-25 mx-auto">
               <label for="email-news" class="form-label"></label>
               <input type="email" class="form-control" placeholder="Adresse email" id="email-news">
-              <button class="btn btn-pink" type="button">S'inscrire</button>
+              <button class="btn btn-pink" data-bs-toggle="modal" data-bs-target="#newsletterModal" type="button">S'inscrire</button>
             </div>
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Merci pour votre inscription</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Merci de vous êtes inscrit à notre newsletter.<br>
+              Vous devriez recevoir un e-mail prochainement.<br> 
+              À Bientôt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
     
   <footer>
-    <div class="container-fluid p-4 footer text-center text-lg-start" style="background-color: #112d3d;">
+    <div class="container-fluid p-4 footer text-center text-lg-start color-background">
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-10 text-light">
           <h3 class="text-uppercase">À propos</h3>
@@ -410,11 +430,11 @@
           <h3 class="text-uppercase">Contact</h3>
           <p class="mb-0">105 rue des fleurs, 73000 CHAMBERY</p>
           <p class="mb-0">Tel :<a href="tel:+33040000000"> 04 00 00 00 00</a></p>
-          <p>Email:<a href="mailto:contact@example.com"> contact@lacourserose.fr</a></p>
+          <a href="#" class="contact-btn btn btn-footer">Contactez-nous</a>
         </div>
       </div>
     <div class="text-center text-light p-3" style="background-color: #fa008a;">
-      © 2021 Copyright: Aurélie DUMAS
+      &copy; 2021 Copyright: Aurélie DUMAS
     </div>
   </footer>
 
