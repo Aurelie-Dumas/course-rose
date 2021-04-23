@@ -72,6 +72,12 @@ main p {
   background-color: #f0f1f8;
 }
 
+.card-action {
+  width: 20rem;
+  height: auto;
+  background-color: #fa008a;
+}
+
 .footer a {
   text-decoration: none;
   color: #fa008a;

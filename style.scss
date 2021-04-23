@@ -88,6 +88,12 @@ main p {
     background-color: #f0f1f8;
 }
 
+.card-action {
+    width: 20rem;
+    height:auto;
+    background-color: $pink;
+}
+
 .footer {
     a {
         text-decoration: none;
@@ -118,3 +124,4 @@ main p {
         }
     }
 }
+
