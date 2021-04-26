@@ -48,8 +48,6 @@
         <nav class="col-12 p-2 bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
           <ol class="breadcrumb m-0">
             <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-            <li class="breadcrumb-item"><a href="#">L'association</a></li>
-            <li class="breadcrumb-item"><a href="#">Les Courses</a></li>
             <li class="breadcrumb-item active" aria-current="page"><strong>Actualités</strong></li>
           </ol>
         </nav>
@@ -61,170 +59,177 @@
     <section class="container">
       <div class="row">
         <h1 class="display-6 pt-3 m-0 text-center fw-bolder">Notre volonté est de vous tenir informés au plus près de l’actualité.</h1>
-        <h2 class="title py-5">SÉLECTIONNEZ LE SUJET QUI VOUS INTÉRESSe</h2>
+        <h2 class="title py-5">SÉLECTIONNEZ LE SUJET QUI VOUS INTÉRESSE</h2>
       <div>
     </section>
 
     <section class="container">
-      <p class="text-center">
-        <a class="btn btn-pink mb-2" data-bs-toggle="collapse" href="#actualities-pinkrunning" aria-expanded="false" aria-controls="actualities-pinkrunning">La Course Rose</a>
-        <a class="btn btn-pink mb-2" data-bs-toggle="collapse" href="#actualities-fitness" aria-expanded="false" aria-controls="actualities-fitness">Je garde la forme !</a>
-        <a class="btn btn-pink mb-2" data-bs-toggle="collapse" href="#actualities-health" aria-expanded="false" aria-controls="actualities-health">Je prends soin de moi !</a>
-      </p>
+      <ul class="nav nav-tabs" id="actualities" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pinkrunning-tab" data-bs-toggle="tab" data-bs-target="#pinkrunning" type="button" role="tab" aria-controls="pinkrunning" aria-selected="true">La Course Rose</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="fitness-tab" data-bs-toggle="tab" data-bs-target="#fitness" type="button" role="tab" aria-controls="fitness" aria-selected="true">Je garde la forme !</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="health-tab" data-bs-toggle="tab" data-bs-target="#health" type="button" role="tab" aria-controls="health" aria-selected="true">Je prends soin de moi !</button>
+        </li>
+      </ul>
+
       <div class="row mb-5">
         <div class="col-12">
-          <div class="collapse multi-collapse" id="actualities-pinkrunning">
-            <div class="card card-body">
-              <div class="row row-cols-1 row-cols-lg-3 g-4 pb-3 mt-0">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/actus-1.jpg" class="card-img-top" alt="marseille-race">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Course Rose Marseillaise</h5>
-                      <p class="card-text">
-                        Revivez en détail cette journée record ! <br> Une vague rose pour lutter contre le concer du sein, dans une ambiance festive, s'est propagée dans la vieille ville.
-                      </p>
-                      <div class="text-center mt-auto">
-                        <a href="#" class="btn btn-blue">En savoir plus</a>
+          <div class="tab-content" id="actualitiesContent">
+            <div class="tab-pane fade show active" id="pinkrunning" role="tabpanel" aria-labelledby="pinkrunning">
+              <div class="card card-body">
+                <div class="row row-cols-1 row-cols-lg-3 g-4 pb-3 mt-0">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/actus-1.jpg" class="card-img-top" alt="marseille-race">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Course Rose Marseillaise</h5>
+                        <p class="card-text">
+                          Revivez en détail cette journée record ! <br> Une vague rose pour lutter contre le concer du sein, dans une ambiance festive, s'est propagée dans la vieille ville.
+                        </p>
+                        <div class="text-center mt-auto">
+                          <a href="#" class="btn btn-blue">En savoir plus</a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/actus-5.jpg" class="card-img-top" alt="circuit">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Edition 2021: Circuit et nouveautés</h5>
-                      <p class="card-text">
-                        Découvrez dès à présent les parcours et n’hésitez pas à vous inscrire dès maintenant, il y a forcément une course près de chez vous !
-                      </p>
-                      <div class="text-center mt-auto">
-                        <a href="#" class="btn btn-blue">En savoir plus</a>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/actus-5.jpg" class="card-img-top" alt="circuit">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Edition 2021: Circuit et nouveautés</h5>
+                        <p class="card-text">
+                          Découvrez dès à présent les parcours et n’hésitez pas à vous inscrire dès maintenant, il y a forcément une course près de chez vous !
+                        </p>
+                        <div class="text-center mt-auto">
+                          <a href="#" class="btn btn-blue">En savoir plus</a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/actus-6.jpg" class="card-img-top" alt="reasons">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">3 bonnes raisons de s’inscrire à La Course Rose</h5>
-                      <p class="card-text">
-                        Quoi de mieux pour réaliser LA bonne actiond de l'année que de s’inscrire à l’événement sportif et caritatif de la rentrée ? 
-                      </p>
-                      <div class="text-center mt-auto">
-                        <a href="#" class="btn btn-blue">En savoir plus</a>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/actus-6.jpg" class="card-img-top" alt="reasons">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">3 bonnes raisons de s’inscrire à La Course Rose</h5>
+                        <p class="card-text">
+                          Quoi de mieux pour réaliser LA bonne actiond de l'année que de s’inscrire à l’événement sportif et caritatif de la rentrée ? 
+                        </p>
+                        <div class="text-center mt-auto">
+                          <a href="#" class="btn btn-blue">En savoir plus</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+
+            <div class="tab-pane fade" id="fitness" role="tabpanel" aria-labelledby="fitness">
+              <div class="card card-body">
+                <div class="row row-cols-1 row-cols-lg-3 g-4 pb-3 mt-0">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/actus-2.jpg" class="card-img-top" alt="materiel">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Choisissez le bon matériel</h5>
+                        <p class="card-text">
+                          Tout comme l'alimentation, il faut tester l'équipement avant de le porter le Jour J. Le choix est souvent difficile et très variable.
+                        </p>
+                        <div class="text-center mt-auto">
+                          <a href="#" class="btn btn-blue">En savoir plus</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/actus-3.jpg" class="card-img-top" alt="pressure">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pas trop de pression...</h5>
+                        <p class="card-text">
+                          Ce sera votre premier marathon, l'objectif est avant tout de le finir. Vous pouvez déjà être fière de vous le jour où vous vous alignez sur la ligne de départ.  
+                        </p>
+                        <div class="text-center mt-auto">
+                          <a href="#" class="btn btn-blue">En savoir plus</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/actus-4.jpg" class="card-img-top" alt="injuries">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Attention aux blessures</h5>
+                        <p class="card-text">
+                          Pour participer à une course en France, il vous faudra un certificat établi par votre médecin. 
+                          Pensez à faire réaliser ce bilan complet vous préparer physiquement.
+                        </p>
+                        <div class="text-center mt-auto">
+                          <a href="#" class="btn btn-blue">En savoir plus</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="health" role="tabpanel" aria-labelledby="health">
+              <div class="card card-body">
+                <div class="row row-cols-1 row-cols-lg-3 g-4 pb-3 mt-0">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/actus-7.jpg" class="card-img-top" alt="sport-bra">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Comment choisir votre brassière de sport ?</h5>
+                        <p class="card-text">
+                          Les sports n’ont pas tous le même niveau d’impact sur la poitrine.  S’il est un équipement qu’il faut choisir avec soin, c’est bien votre brassière de sport.
+                        </p>
+                        <div class="text-center mt-auto">
+                          <a href="#" class="btn btn-blue">En savoir plus</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/actus-8.jpg" class="card-img-top" alt="mineral-water">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">5 questions sur l’eau minérale</h5>
+                        <p class="card-text">
+                          Riche en minéraux et oligo-éléments, l’eau minérale possède une composition stable qui lui confère des propriétés favorables à la santé.
+                        </p>
+                        <div class="text-center mt-auto">
+                          <a href="#" class="btn btn-blue">En savoir plus</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="images/actus-9.jpg" class="card-img-top" alt="health-food">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Running et minceur : infos ou intox ? On vous dit tout.</h5>
+                        <p class="card-text">
+                          Pratiquer la course à pieds va évidemment de paire avec une alimentation saine. Une alimentation équilibrée doit exclure les aliments trop gras, sucrés ou trop salés. 
+                        </p>
+                        <div class="text-center mt-auto">
+                          <a href="#" class="btn btn-blue">En savoir plus</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="col-12">
-          <div class="collapse multi-collapse" id="actualities-fitness">
-            <div class="card card-body">
-              <div class="row row-cols-1 row-cols-lg-3 g-4 pb-3 mt-0">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/actus-2.jpg" class="card-img-top" alt="materiel">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Choisissez le bon matériel</h5>
-                      <p class="card-text">
-                        Tout comme l'alimentation, il faut tester l'équipement avant de le porter le Jour J. Le choix est souvent difficile et très variable.
-                      </p>
-                      <div class="text-center mt-auto">
-                        <a href="#" class="btn btn-blue">En savoir plus</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/actus-3.jpg" class="card-img-top" alt="pressure">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Pas trop de pression...</h5>
-                      <p class="card-text">
-                        Ce sera votre premier marathon, l'objectif est avant tout de le finir. Vous pouvez déjà être fière de vous le jour où vous vous alignez sur la ligne de départ.  
-                      </p>
-                      <div class="text-center mt-auto">
-                        <a href="#" class="btn btn-blue">En savoir plus</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/actus-4.jpg" class="card-img-top" alt="injuries">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Attention aux blessures</h5>
-                      <p class="card-text">
-                        Pour participer à une course en France, il vous faudra un certificat établi par votre médecin. 
-                        Pensez à faire réaliser ce bilan complet vous préparer physiquement.
-                      </p>
-                      <div class="text-center mt-auto">
-                        <a href="#" class="btn btn-blue">En savoir plus</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="collapse multi-collapse" id="actualities-health">
-            <div class="card card-body">
-              <div class="row row-cols-1 row-cols-lg-3 g-4 pb-3 mt-0">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/actus-7.jpg" class="card-img-top" alt="sport-bra">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Comment choisir votre brassière de sport ?</h5>
-                      <p class="card-text">
-                        Les sports n’ont pas tous le même niveau d’impact sur la poitrine.  S’il est un équipement qu’il faut choisir avec soin, c’est bien votre brassière de sport.
-                      </p>
-                      <div class="text-center mt-auto">
-                        <a href="#" class="btn btn-blue">En savoir plus</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/actus-8.jpg" class="card-img-top" alt="mineral-water">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">5 questions sur l’eau minérale</h5>
-                      <p class="card-text">
-                        Riche en minéraux et oligo-éléments, l’eau minérale possède une composition stable qui lui confère des propriétés favorables à la santé.
-                      </p>
-                      <div class="text-center mt-auto">
-                        <a href="#" class="btn btn-blue">En savoir plus</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/actus-9.jpg" class="card-img-top" alt="health-food">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Running et minceur : infos ou intox ? On vous dit tout.</h5>
-                      <p class="card-text">
-                        Pratiquer la course à pieds va évidemment de paire avec une alimentation saine. Une alimentation équilibrée doit exclure les aliments trop gras, sucrés ou trop salés. 
-                      </p>
-                      <div class="text-center mt-auto">
-                        <a href="#" class="btn btn-blue">En savoir plus</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>        
       </div>
-    </section>
+
+
       
     <section class="container-fluid color-background-news">
       <div class="row">
