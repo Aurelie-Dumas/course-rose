@@ -11,7 +11,11 @@ body {
 }
 
 .color-background {
-    background-color:#112d3d !important;
+    background-color:#112d3d;
+}
+
+.color-background-footer {
+    background-color: $pink;
 }
 
 .nav-link:hover {
@@ -46,6 +50,10 @@ main p {
     font-size: $base-value-p;
     text-align: justify;
 }
+
+/*
+ * Mixins
+ */
 
 @mixin button {
     color: $color-btn;

@@ -4,7 +4,11 @@ body {
 }
 
 .color-background {
-  background-color: #112d3d !important;
+  background-color: #112d3d;
+}
+
+.color-background-footer {
+  background-color: #fa008a;
 }
 
 .nav-link:hover {
@@ -36,6 +40,9 @@ main p {
   text-align: justify;
 }
 
+/*
+ * Mixins
+ */
 .btn-pink {
   color: white;
   font-weight: 700;
