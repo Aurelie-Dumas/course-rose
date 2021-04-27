@@ -1,4 +1,9 @@
+// Fonts
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+// Variables
+
 $global-font: 'Open Sans', sans-serif;
 $base-value-title: 32px;
 $base-value-p: 14px;
@@ -6,9 +11,23 @@ $pink:#fa008a;
 $color-btn: white;
 $border-btn: #590433;
 
-body {
-    font-family: $global-font;
+// Placeholders
+
+%title-centered {
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: $base-value-title;
 }
+
+// Mixins
+
+@mixin button {
+    color: $color-btn;
+    font-weight: 700;
+}
+
+// Backgrounds
 
 .color-background {
     background-color:#112d3d;
@@ -18,26 +37,18 @@ body {
     background-color: $pink;
 }
 
-.nav-link:hover {
-    color:$pink !important;
+.color-background-news {
+    background-color: #f0f1f8;
 }
 
-.breadcrumb {
-    a {
-    color:$pink;
-    text-decoration: none;
-    }
-}
-
-%title-centered {
-    text-align:center;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: $base-value-title;
-}
+// Titles or paragraphs
 
 .title {
     @extend %title-centered;
+}
+
+body {
+    font-family: $global-font;
 }
 
 h1 {
@@ -46,19 +57,40 @@ h1 {
 h3 {
     font-size: 20px;
 }
+
 main p {
     font-size: $base-value-p;
     text-align: justify;
 }
 
-/*
- * Mixins
- */
+// Breadcrumb
 
-@mixin button {
-    color: $color-btn;
-    font-weight: 700;
+.breadcrumb {
+    a {
+    color:$pink;
+    text-decoration: none;
+    }
 }
+
+// Bannière
+
+#banniere_image {
+    width:100%;
+    height: 25rem;
+    background: url(images/race-paris.jpg) no-repeat;
+    background-size: cover;
+
+}
+#banniere_image {
+    h1, h2 {
+    font-style: italic;
+    font-weight:bold;
+    color: white;
+    line-height:1;
+    }
+}
+
+// Buttons
 
 .btn-pink {
     @include button;
@@ -82,7 +114,8 @@ main p {
 
 .form-donate{
     .btn {
-        min-width: 25%;
+        min-width: 150px;
+        width:50%;
     }
 }
 
@@ -92,32 +125,22 @@ main p {
     }
 }
 
-.color-background-news {
-    background-color: #f0f1f8;
+// Links
+
+a {
+    text-decoration: none;
+    color: $pink;
 }
 
-.card-action {
-    width: 20rem;
-    height:auto;
-    background-color: $pink;
+a:hover {
+    color: #F961B4;
 }
 
-#banniere_image {
-    width:100%;
-    height: 25rem;
-    background: url(images/race-paris.jpg) no-repeat;
-    background-size: cover;
-
-}
-#banniere_image {
-    h1, h2 {
-    font-style: italic;
-    font-weight:bold;
-    color: white;
-    line-height:1;
-    }
+.nav-link:hover {
+    color:$pink !important;
 }
 
+// Forms
 .fieldset {
     color:$pink;
     font-weight: bold;
@@ -132,18 +155,19 @@ main p {
     font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    color: $pink;
-}
-
-a:hover {
-    color: #F961B4;
-}
-
 .email-news {
     max-width: 300px;
 }
+
+// Cards
+
+.card-action {
+    width: 20rem;
+    height:auto;
+    background-color: $pink;
+}
+
+// Footer
 
 .footer {
     .btn-footer {
@@ -157,6 +181,8 @@ a:hover {
     }
 }
 
+// Médias Queries
+
 @media screen and (max-width: 991px) {
     .btn-responsive {
         .btn {
@@ -164,4 +190,14 @@ a:hover {
         }
     }
 }
+
+@media screen and (max-width: 436px) {
+    .amount {
+        min-width: 150px;
+        width:100%;
+        }
+    }
+}
+
+
 
