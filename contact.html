@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head> 
+
+<body>
+  <header>
+    <nav class="color-background navbar navbar-expand-xl navbar-dark p-0">
+      <div class="container-fluid">
+        <a class="navbar-brand mt-2" href="index.html">
+          <span class="logo"><img src="images/logo.png" width="182" height="90"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link lead me-2" href="#">L'association</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lead me-2" href="#">Les Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lead me-2" href="#">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lead me-2" href="#">Faire un don</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lead me-2" href="#">Devenir bénévole</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lead active" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row breadcrumb">
+        <nav class="col-12 p-2 bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><strong>Contact</strong></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container-fluid color-background-news">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="text-center pt-4 mb-3"><strong>Restez informés</strong></h3>
+          <p class="text-center">
+            Actualités, résultats et photos de vos courses ? Ou tout simplement envie d’avoir de nos nouvelles,
+            inscrivez-vous dès maintenant à notre newsletter.
+          </p>
+          <div class="input-group mb-3 mx-auto email-news">
+            <label for="email-news" class="form-label"></label>
+            <input type="email" class="form-control" placeholder="Adresse email" id="email-news">
+            <button class="btn btn-pink" data-bs-toggle="modal" data-bs-target="#newsletterModal" type="button">S'inscrire</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Merci pour votre inscription</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Merci de vous êtes inscrit à notre newsletter.<br>
+              Vous devriez recevoir un e-mail prochainement.<br> 
+              À Bientôt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid p-4 footer text-center text-lg-start color-background">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-10 text-light">
+          <h3 class="text-uppercase">À propos</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias.NFugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, 
+            est atque cumque eum delectus sint!
+          </p>
+        </div>
+    
+        <div class="col-lg-3 col-md-12 mb-10 text-light">
+          <h3 class="text-uppercase">Liens</h3>
+          <ul class="list-unstyled mb-1rem">
+            <li>
+              <a href="#!">Les Courses</a>
+            </li>
+            <li>
+              <a href="#!">Actualités</a>
+            </li>
+            <li>
+              <a href="#!">Faire un don</a>
+            </li>
+            <li>
+              <a href="#!">Devenir bénévole</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 mb-10 text-light">
+          <h3 class="text-uppercase">Contact</h3>
+          <p class="mb-0">105 rue des fleurs, 73000 CHAMBERY</p>
+          <p class="mb-0">Tel :<a href="tel:+33040000000"> 04 00 00 00 00</a></p>
+          <a href="#" class="contact-btn btn btn-footer">Contactez-nous</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center text-light p-3" style="background-color: #fa008a;">
+      &copy; 2021 Copyright: Aurélie DUMAS
+    </div>
+  </footer>
+
+  <script src="bootstrap.bundle.min.js"></script>    
+
+</body>
+</html>
