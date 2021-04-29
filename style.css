@@ -89,7 +89,7 @@ main p {
 }
 
 .form-donate .btn {
-  min-width: 150px;
+  min-width: 100px;
   width: 50%;
 }
 
@@ -121,6 +121,14 @@ a:hover {
 
 .contact-card a:hover {
   color: #940052;
+}
+
+.back-in-top a {
+  color: white;
+}
+
+.back-in-top a:hover {
+  color: white;
 }
 
 .fieldset {
@@ -167,13 +175,6 @@ a:hover {
 @media screen and (max-width: 991px) {
   .btn-responsive .btn {
     min-width: 50%;
-  }
-}
-
-@media screen and (max-width: 436px) {
-  .amount {
-    min-width: 150px;
-    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
