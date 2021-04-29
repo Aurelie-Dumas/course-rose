@@ -120,10 +120,9 @@ main p {
       }
 }
 
-
 .form-donate {
     .btn {
-        min-width: 100px;
+        min-width: 120px;
         width:50%;
     }
 }
@@ -212,6 +211,12 @@ a:hover {
             border-color: lighten(#112d3d, 12%);
           }
     }
+}
+
+.img-donate {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 // Médias Queries
