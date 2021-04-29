@@ -14,7 +14,7 @@
     <nav class="color-background navbar navbar-expand-xl navbar-dark p-0">
       <div class="container-fluid">
         <a class="navbar-brand mt-2" href="index.html">
-          <span class="logo"><img src="images/logo.png" width="182" height="90"></span>
+          <span class="logo"><img src="images/logo.png" width="182" height="90" alt="logo"></span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -22,22 +22,36 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link lead me-2" href="#">L'association</a>
+              <a class="nav-link lead me-2" href="association.html">L'association</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle lead me-2" href="races.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                Les Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="links"><a class="dropdown-item" href="race-paris.html">Paris</a></li>
+                <li><a class="dropdown-item" href="race-paris.html">Lyon</a></li>
+                <li><a class="dropdown-item" href="race-paris.html">Bordeaux</a></li>
+                <li><a class="dropdown-item" href="race-paris.html">Lille</a></li>
+                <li><a class="dropdown-item" href="race-paris.html">Brest</a></li>
+                <li><a class="dropdown-item" href="race-paris.html">Toulouse</a></li>
+                <li><a class="dropdown-item" href="race-paris.html">Nantes</a></li>
+                <li><a class="dropdown-item" href="race-paris.html">Dijon</a></li>
+                <li><a class="dropdown-item" href="race-paris.html">Cannes</a></li>
+                <li class="links"><a class="dropdown-item" href="races.html">Toutes les courses</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link lead me-2" href="#">Les Courses</a>
+              <a class="nav-link lead me-2" href="actualities.html">Actualités</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link lead me-2" href="#">Actualités</a>
+              <a class="nav-link lead me-2" href="donate.html">Faire un don</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link lead me-2" href="#">Faire un don</a>
+              <a class="nav-link lead me-2 active" href="volonteers.html">Devenir bénévole</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link lead me-2 active" href="#">Devenir bénévole</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link lead" href="#">Contact</a>
+              <a class="nav-link lead" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -47,7 +61,7 @@
       <div class="row breadcrumb">
         <nav class="col-12 p-2 bg-light" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
           <ol class="breadcrumb m-0">
-            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
             <li class="breadcrumb-item active" aria-current="page"><strong>Devenir bénévole</strong></li>
           </ol>
         </nav>
@@ -203,7 +217,7 @@
       </div>
     </section>
 
-    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModal" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -237,16 +251,16 @@
           <h3 class="text-uppercase">Liens</h3>
           <ul class="list-unstyled mb-1rem">
             <li>
-              <a href="#!">Les Courses</a>
+              <a href="races.html">Les Courses</a>
             </li>
             <li>
-              <a href="#!">Actualités</a>
+              <a href="actualities.html">Actualités</a>
             </li>
             <li>
-              <a href="#!">Faire un don</a>
+              <a href="donate.html">Faire un don</a>
             </li>
             <li>
-              <a href="#!">Devenir bénévole</a>
+              <a href="volonteers.html">Devenir bénévole</a>
             </li>
           </ul>
         </div>
@@ -255,7 +269,7 @@
           <h3 class="text-uppercase">Contact</h3>
           <p class="mb-0">105 rue des fleurs, 73000 CHAMBERY</p>
           <p class="mb-0">Tel :<a href="tel:+33040000000"> 04 00 00 00 00</a></p>
-          <a href="#" class="contact-btn btn btn-footer">Contactez-nous</a>
+          <a href="contact.html" class="contact-btn btn btn-footer mt-3 mb-2">Contactez-nous</a>
         </div>
       </div>
     </div>
