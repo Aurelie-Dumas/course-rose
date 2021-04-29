@@ -123,7 +123,7 @@ main p {
 
 .form-donate{
     .btn {
-        min-width: 150px;
+        min-width: 100px;
         width:50%;
     }
 }
@@ -215,12 +215,6 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 436px) {
-    .amount {
-        min-width: 150px;
-        width:100%;
-        }
-}
 
 
 
