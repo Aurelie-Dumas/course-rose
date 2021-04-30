@@ -43,7 +43,7 @@ main p {
 #banniere_image {
   width: 100%;
   height: 25rem;
-  background: url(images/race-paris.jpg) no-repeat;
+  background: url(images/course-paris-banniere.jpg) no-repeat;
   background-size: cover;
 }
 
