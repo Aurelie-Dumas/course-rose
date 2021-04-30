@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-.title {
+h2 {
   text-align: center;
-  text-transform: uppercase;
   font-weight: 600;
   font-size: 32px;
 }
@@ -27,6 +26,10 @@ h1 {
 }
 
 h3 {
+  font-size: 25px;
+}
+
+h4 {
   font-size: 20px;
 }
 
@@ -160,6 +163,13 @@ a:hover {
   background-color: #fa008a;
 }
 
+.img-donate {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer .btn-footer {
   color: white;
   font-weight: 700;
@@ -170,13 +180,6 @@ a:hover {
   color: white;
   background-color: #c7006e;
   border-color: #1e506d;
-}
-
-.img-donate {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media screen and (max-width: 991px) {
