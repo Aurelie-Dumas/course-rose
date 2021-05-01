@@ -141,6 +141,12 @@ a:hover {
      object-fit: cover;
 }
 
+.card-action {
+  width: 20rem;
+  height: auto;
+  background-color: #fa008a;
+}
+
 .footer .btn-footer {
   color: white;
   font-weight: 700;
