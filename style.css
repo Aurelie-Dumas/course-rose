@@ -81,16 +81,6 @@ main p {
   border-color: #1e506d;
 }
 
-.btn-contactform {
-  color: #fa008a;
-}
-
-.btn-contactform:hover {
-  color: white;
-  background-color: #c7006e;
-  border-color: #ff38a6;
-}
-
 .form-donate .btn {
   min-width: 120px;
   width: 50%;
@@ -111,19 +101,6 @@ a:hover {
 
 .nav-link:hover {
   color: #fa008a !important;
-}
-
-.contact-card {
-  height: 50%;
-  background-color: #fa008a;
-}
-
-.contact-card a {
-  color: white;
-}
-
-.contact-card a:hover {
-  color: #940052;
 }
 
 .back-in-top a {
@@ -155,12 +132,6 @@ a:hover {
 
 .svg-contact {
   background-color: white;
-}
-
-.card-action {
-  width: 20rem;
-  height: auto;
-  background-color: #fa008a;
 }
 
 .img-donate {

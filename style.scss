@@ -115,14 +115,6 @@ main p {
         border-color: lighten(#112d3d, 12%);
       }
 }
-.btn-contactform {
-    color: $pink;
-    &:hover {
-        color: $color-btn;
-        background-color: darken($pink, 10%);
-        border-color: lighten($pink, 12%);
-      }
-}
 
 .form-donate {
     .btn {
@@ -150,17 +142,6 @@ a:hover {
 
 .nav-link:hover {
     color:$pink !important;
-}
-
-.contact-card {
-    height: 50%;
-    background-color: $pink;
-    a {
-        color: white;
-    }
-    a:hover {
-        color: darken($pink, 20%);
-    }
 }
 
 .back-in-top {
@@ -194,15 +175,6 @@ a:hover {
 .svg-contact {
     background-color:white;
 }
-
-// Cards
-
-.card-action {
-    width: 20rem;
-    height:auto;
-    background-color: $pink;
-}
-
 
 // images
 
