@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:og="http://ogp.me/ns#">
+<html lang="fr" prefix="og=http://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
     <title>La Course Rose</title>
@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-    <meta property=”og:type” content="siteweb">
+    <meta property="og:type" content="siteweb">
     <meta property="og:title" content="Courses caritatives contre le cancer du sein">
     <meta property="og:description" content="La Course Rose finance la recherche contre le cancer du sein en organisant des courses caritatives en France.">
     <meta property="og:image" content="images/la-course-rose.jpg">
     <meta property="og:url" content="">
   </head>
 
-<body>
+  <body>
   <header>
     <nav class="color-background navbar navbar-expand-xl navbar-dark p-0" id="top">
       <div class="container-fluid">
@@ -33,7 +33,7 @@
               <a class="nav-link lead me-2" href="association.html">L'association</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle lead me-2" href="les-courses.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              <a class="nav-link dropdown-toggle lead me-2" href="les-courses.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                 Les Courses
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -135,8 +135,8 @@
               <div class="form-group col-md-12 pb-2">
                 <label class="form-label form-label-sm" for="city">Ville</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="city" id="paris">
-                    <label class="form-check-label" for="paris">
+                    <input class="form-check-input" type="radio" name="city" id="city">
+                    <label class="form-check-label" for="city">
                     Paris
                     </label>
                 </div>
@@ -198,7 +198,7 @@
                 <textarea class="form-control" id="comment" rows="4" placeholder="Vous voulez devenir bénévole, dites-en nous plus."></textarea>
               </div> 
             </div> 
-            <button type="button" role="button" class="btn btn-light btn-pink">
+            <button type="button" class="btn btn-light btn-pink">
               Enregistrer mon inscription
             </button>
           </form>
@@ -330,4 +330,4 @@
     <script src="bootstrap.bundle.min.js"></script>    
   
   </body>
-  </html>
+</html>
